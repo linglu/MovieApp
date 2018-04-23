@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/bg_item"
+                android:padding="8dp">
+
+    <com.linky.movieapp.widget.enlargeImgView.PhotoView
+        android:id="@+id/iv_header"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+    />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="标题1"
+        android:textColor="@color/tx_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="导演："
+        android:textSize="14sp"
+        android:textColor="@color/tx_color"
+    />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/director"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="hahah"
+        android:textColor="@color/tx_color"
+        android:textSize="14sp"
+    />
+
+    <TextView
+        android:id="@+id/tv_pubtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_director"
+        android:layout_marginLeft="12dp"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="发布时间"
+        android:textColor="@color/tx_color"
+    />
+
+</RelativeLayout>
